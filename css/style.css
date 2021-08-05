@@ -76,6 +76,9 @@ img {
 
 /* All pages styles */
 .header .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   color: var(--link-text-color);
   font-family: Raleway;
   font-style: normal;
@@ -161,7 +164,7 @@ img {
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+
   align-items: baseline;
 }
 
@@ -190,6 +193,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.social-network-group {
+  margin-left: 70px;
 }
 
 .footer .social-network-icon {
@@ -237,6 +244,11 @@ contact-list-item {
   fill: var(--main-text-color);
 }
 
+.header-link {
+  display: flex;
+  align-items: center;
+}
+
 .header-link:hover .contact-icon,
 .header-link:focus .contact-icon {
   fill: var(--link-text-color);
@@ -260,7 +272,6 @@ contact-list-item {
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
 
 .title-hero {
@@ -346,10 +357,8 @@ contact-list-item {
 
 .plus-icon-box {
   background-color: var(--background-color-primery);
-
+  height: 120px;
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 
   display: flex;
   justify-content: center;
@@ -476,18 +485,13 @@ contact-list-item {
 
 .our-clients-list {
   display: flex;
-}
-
-.our-clients-list-item {
-  margin-right: 30px;
-  width: 170px;
-}
-
-.our-clients-list-item:last-child {
-  margin-right: 0;
+  justify-content: space-between;
 }
 
 .client-link {
+  width: 170px;
+  height: 92px;
+
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 32px;
@@ -552,10 +556,12 @@ contact-list-item {
   cursor: pointer;
 }
 
-.portfolio-nav-list-iteam:hover,
-.portfolio-nav-list-iteam:focus,
-.portfolio-section-list-iteam:hover,
-.portfolio-section-list-iteam:focus {
+.portfolio-section-list-link {
+  display: block;
+}
+
+.portfolio-section-list-link:hover,
+.portfolio-section-list-link:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .portfolio-nav-list-iteam:not(:last-child) {
@@ -566,6 +572,7 @@ contact-list-item {
 .portfolio-nav-list button:focus {
   background-color: var(--link-text-color);
   color: var(--white-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .portfolio-nav-list .active-portfolio-button {
   background-color: var(--link-text-color);
